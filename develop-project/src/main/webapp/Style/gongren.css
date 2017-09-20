@@ -1,0 +1,628 @@
+a
+{
+    color: #14ae67;
+    text-decoration: none;
+}
+p{ margin: 0;padding: 0}
+.pull-left
+{
+    float: left;
+}
+.pull-right
+{
+    float: right;
+}
+.clear
+{
+    clear: both;
+}
+.align-l
+{
+   text-align: left
+}
+.align-c
+{
+   text-align: center
+}
+.align-r
+{
+    text-align: right;
+}
+.text-green{color: #14ae67}
+.Search
+{
+    border: 1px solid #e3e3e3;
+    border-radius: 24px 0 0 24px;
+    display: table-cell;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 30px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 180px;
+}
+.BtnSearch
+{
+    background: #f39800 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0 24px 24px 0;
+    color: #fff;
+    cursor: pointer;
+    display: table-cell;
+    float: left;
+    height: 28px;
+    vertical-align: middle;
+    width: 50px;
+}
+.SecNav
+{
+    height: 87px;
+    border: 1px #bbb solid;
+    width: 1190px;
+    margin: 0 auto;
+}
+.SecNav .on a
+{
+    background: #14AE67;
+    color: #fff;
+}
+.SecNav ul
+{
+    margin-top: 15px;
+}
+.SecNav ul li
+{
+    float: left;
+    color: #14AE67;
+    border: 1px solid #14AE67;
+    border-radius: 3px;
+    margin-left: 15px;
+    width: 70px;
+    text-align: center;
+}
+.SecNav .t-type
+{
+    color: #6c6c6c;
+    font-weight: bold;
+    border: 1px solid #fff;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: auto;
+}
+.SecNav .t-all
+{
+    color: #14AE67;
+    font-weight: bold;
+    border: 1px solid #fff;
+    width: auto;
+    margin-left: 0;
+}
+.SecNav ul li a
+{
+    text-decoration: none;
+    color: #6c6c6c;
+    display: inline-block;
+    width: 70px;
+}
+.SecNav .t-all a
+{
+    color: #14AE67;
+    width: auto;
+}
+.SecNav .t-all a:hover
+{
+    background: #fff;
+    color: #14AE67;
+}
+.SecNav ul li a:hover
+{
+    background: #14AE67;
+    color: #fff;
+}
+
+
+.main
+{
+    font-size: 14px;
+}
+.main .content
+{
+    width: 1190px;
+    margin: 0 auto;
+}
+.main .content .c-left
+{
+    width: 880px;
+}
+.main .content .c-left ul li
+{
+    height: 75px;
+    line-height: 75px;
+    border-bottom: dashed 1px #bbbbbb;
+}
+.main .content .c-left ul li span
+{
+    height: 75px;
+    line-height: 75px;
+    width: 14.0%;
+    display: inline-block;
+    text-align: center;
+	overflow:hidden;
+	
+}
+.main .content .c-left ul li label
+{
+    color: #fff;
+}
+.main .content .c-left .c-left-t
+{
+    height: 70px;
+}
+.main .content .c-left .c-left-t span
+{
+    font-weight: bold;
+	overflow:visible;
+}
+.main .content .c-left .c-left-t label
+{
+    color: #bbb;
+}
+.main .content .c-right
+{
+    width: 283px;
+}
+.main .content .c-left ul li .logo img
+{
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
+    border: 2px #14AE67 solid;
+    border-radius: 60px;
+}
+
+.main .content .c-left ul li .Tel a
+{
+    background: #14ae67;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.titlebar
+{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    width: 100%;
+    margin: 17px 0 12px 0;
+}
+.titlebar .title
+{
+    background: url("../images/title-bg-new.png"/*tpa=http://wh.gz360.com/images/title-bg-new.png*/) no-repeat scroll right 5px;
+    color: #595656;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 34px;
+    padding-right: 30px;
+}
+
+.gz-list
+{
+    border: 1px solid #e3e3e3;
+    padding: 4px 0;
+}
+.gz-item
+{
+    overflow: hidden;
+    padding: 16px 0;
+    margin: 0 10px;
+    border-bottom: 1px dashed #bbbbbb;
+}
+.gz-item img
+{
+    border-radius: 60px;
+    height: 60px;
+    width: 60px;
+}
+.l-content
+{
+    line-height: 14px;
+    margin-left: 8px;
+}
+.l-content i
+{
+    background: #ea5415 none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    line-height: 20px;
+}
+
+.l-num
+{
+    margin-top: 7px;
+}
+.l-title b
+{
+    margin-left: 10px;
+}
+.l-area
+{
+    margin-top: 5px;
+}
+.l-img
+{
+    margin-left: 5px;
+}
+
+
+.site-page
+{
+    height: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+.site-page a
+{
+    border: 1px solid #d9e6ee;
+    color: #000;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.site-page a:hover
+{
+    border: 1px solid #14AE67;
+    color: #14AE67;
+}
+.site-page .site-page-a
+{
+    background-color: #14AE67;
+    border: 1px solid #14AE67;
+    color: #fff;
+}
+.site-page .site-page-a:hover
+{
+    background-color: #14AE67;
+    border: 1px solid #14AE67;
+    color: #fff;
+}
+
+
+.box_tit div
+{
+    font-size: 14px;
+    height: 40px;
+    left: -10px;
+    width: 170px;
+    line-height: 40px;
+    color: #14ae67;
+    background: url("../Images/green_bg.gif"/*tpa=http://wh.gz360.com/Images/green_bg.gif*/) no-repeat scroll center bottom;
+    text-align: center;
+    font-weight: bold;
+}
+.box_input
+{
+    margin-top: 15px;
+}
+.box_input input.sj
+{
+    margin-right: 9px;
+    width: 130px;
+    height: 27px;
+    padding: 0 10px;
+}
+
+.free_chk
+{
+    background: #14ae67;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.LoginBox
+{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    display: none;
+    height: 360px;
+    left: 50%;
+    margin: -180px 0 0 -225px;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    width: 450px;
+}
+
+
+
+.loginclose
+{
+    background:  url("../Images/box_close.jpg"/*tpa=http://wh.gz360.com/Images/box_close.jpg*/) no-repeat scroll 0 0;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    z-index: 1;
+}
+
+.LoginBox label
+{
+    display: inline-block;
+    font-weight: bold;
+    max-width: 100%;
+}
+.LoginBox input, button, select, textarea
+{
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.LoginBox .item
+{
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.LoginBox .ititle
+{
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.LoginBox .ititle h2
+{
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center
+}
+.LoginBox .ititle span
+{
+    float: right;
+    width: 205px;
+    font-weight: normal;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.errbox
+{
+    border-radius: 2px;
+    margin-bottom: 17px;
+    padding: 10px;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #11A84E;
+    border: 1px solid #e6e6e6;
+}
+.errbox i, .privacy i
+{
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    background: #11A84E;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.ibox label
+{
+    min-height: 1px;
+    padding: 12px 10px 0 10px;
+    position: relative;
+    margin-bottom: 0;
+    text-align: right;
+    width: 16.7%;
+    float: left;
+    box-sizing: border-box;
+}
+.ibox
+{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+}
+.box
+{
+    float: left;
+    width: 80%;
+    padding-right: 160px;
+    min-height: 1px;
+    padding-left: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+.box-1
+{
+    float: left;
+    width: 80%;
+    padding-right: 10px;
+    min-height: 1px;
+    padding-left: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+.box-2
+{
+    float: left;
+    width: 66.7%;
+    padding-right: 10px;
+    min-height: 1px;
+    padding-left: 10px;
+    position: relative;
+    margin-left: 16.7%;
+    box-sizing: border-box;
+}
+.box .input
+{
+    width: 100%;
+}
+.ibox input
+{
+    border-radius: 0;
+    font-size: 15px;
+    height: 42px;
+    line-height: 1.33;
+    padding: 10px 16px;
+}
+
+.ibox select, .ibox .form-btn
+{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 140px;
+    padding: 10px 16px;
+}
+.ibox .CheckCode
+{
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.ibox .CheckCode a
+{
+    line-height: 42px;
+    height: 42px;
+    margin-left: 5px;
+}
+.ibox .CheckCode img
+{
+    float: left;
+}
+.ibox .form-btn
+{
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+    font-size: 15px;
+    border-radius: 3px;
+    -moz-user-select: none;
+    background-image: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 140px;
+    top: 0px;
+}
+.box-2 .form-btnsub
+{
+    width: 100%;
+    display: block;
+    border: 1px solid #fff;
+    background: #11A84E;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+.ibox .form-btn:hover
+{
+    background-color: #e6e6e6;
+}
+.form-control
+{
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #777;
+    display: block;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.form-control:focus
+{
+    border-color: #11A84E;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(75, 172, 255, 0.6);
+    outline: 0 none;
+}
+.privacy
+{
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+
+.main .gr-info{ border: 1px solid #ccc;width: 1190px;margin: 0 auto}
+
+.main .gr-info .gr-main li{ text-align: center;height: 40px;line-height: 40px;}
+.main .gr-info .gr-main li b{ font-size: 20px;}
+.main .gr-info .gr-main .gr-logo{ height: 180px;padding: 20px;}
+.main .gr-info .gr-main .gr-logo img{ height: 180px;width: 180px;border-radius: 180px;border: solid 2px #14ae67}
+.main .gr-info .gr-main li a{background: #EE8F25;padding: 5px 20px;color: #fff;font-size: 16px}
+
+.main .gr-info .gr-detail{ width: 1000px;margin: 30px auto;border-top: dashed 1px #cccccc;border-bottom: dashed 1px #cccccc;height: 120px;padding: 30px 0;}
+.main .gr-info .gr-detail li{float: left;width:25%;height: 40px;line-height: 40px;}
+.main .gr-info .gr-sgdetail{ width: 1000px;margin: 0 auto;}
+.main .gr-info .gr-sgdetail ul{ margin:0 -10px;}
+.main .gr-info .gr-sgdetail li{ float: left;width: 235px;text-align: center;margin: 0 10px;}
+.main .gr-info .gr-sgdetail li img{ width: 100%;height: 170px;}
+
+.main .gr-info .gr-pj{ width: 1000px;margin: 0 auto;}
+
+.comment-list {
+    float: left;
+    height: 72px;
+    margin-bottom: 38px;
+    overflow: hidden;
+    width: 50%;
+}
+.comment-list dt {
+    float: left;
+    height: 72px;
+    width: 72px;
+}
+.comment-list dt img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.comment-list dd {
+    height: 72px;
+    overflow: hidden;
+    padding-left: 15px;
+}
+.comment-list dd .clearfix {
+    padding-bottom: 7px;
+}
+.comment-list dd p {
+    line-height: 24px;
+}
+.FastCom{ width: 1000px;margin: 0 auto;}
+.FastCom .Com textarea{ height: 100px;width: 100%;border-radius: 5px;border: 1px solid #bdbdbd}
+.FastCom .button { text-align: right;margin: 20px 0;}
+.FastCom .button input{ border: none;background: #14ae67;color: #fff;width: 120px;height: 35px;border-radius: 3px;}

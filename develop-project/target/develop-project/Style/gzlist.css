@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+#w-slider, #w-bylj, #w-txhgz, #w-zxkgzt {
+    margin: 0 auto;
+    width: 1190px;
+}
+.w-recommend .recommend-tittle p {
+    width: 72px;
+}
+.recommend-tittle img {
+    display: block;
+    height: 12px;
+    margin-top: 4px;
+    width: 205px;
+}
+.w-recommend .xzheight {
+   overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280px;
+}
+.recommend-tittle {
+    padding-top: 8px;
+}
+.w-bylj-title {
+    border-bottom: 1px solid #e8e8e8;
+	margin-bottom:0px;
+}
+.w-bylj-title h3 {
+    color: #000;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 23px;
+}
+.w-bylj-title h3 span {
+    color: #666;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.w-bylj-title span em {
+    color: #e84c3d;
+    font-style: normal;
+}
+.bylj-little-box {
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 280px;
+}
+.bylj-content-box {
+    margin-right: -23px;
+}
+.fl {
+    float: left;
+	color: #333;
+}
+.fr {
+    float: right;
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.bylj-little-box .little-box-img, .little-box-img img {
+    height: 130px;
+    width: 130px;
+}
+.w-dbxx .little-box-img img {
+    display: block;
+    height: 60px;
+    width: 45px;
+}
+.w-dbxx .little-box-img {
+    padding: 10px 0 0 10px;
+    width: 45px;
+}
+#w-tc .little-box-list {
+    margin-left: 0;
+}
+.w-dbxx .little-box-list {
+    padding-left: 14px;
+    width: 117px;
+}
+.w-dbxx .little-box-list li {
+    color: #999;
+    font-size: 12px;
+    margin-top: 7px;
+}
+.w-dbxx .little-box-list li span {
+    color: #ffc000;
+}
+.w-dbxx .little-box-list .first-li a {
+    color: #ffc000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.w-dbxx .little-box-list .first-li {
+    width: 117px;
+}
+.w-dbxx .little-box-list .first-li .fr {
+    color: #999;
+    display: none;
+    font-family: "宋体";
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 5px;
+}
+.w-dbxx .little-box-list .first-li .fl:hover {
+    text-decoration: underline;
+}
+.w-dbxx .little-box-list .li2-bg {
+    background: url("../../static.jiaju.com/jiaju/com/images/qgz/w_star2_bg_03.png"/*tpa=http://static.jiaju.com/jiaju/com/images/qgz/w_star2_bg_03.png*/) repeat-x scroll 0 -19px rgba(0, 0, 0, 0);
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 82px;
+}
+.little-box-list {
+    margin-left: 8px;
+    position: relative;
+    width: 142px;
+}
+.little-box-list li {
+    color: #3e4045;
+    font-size: 14px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 142px;
+}
+.little-box-list li span {
+    color: #3e4045;
+}
+.little-box-list .first-li {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 0;
+}
+.little-box-list .li2-bg {
+    background: url("../../static.jiaju.com/jiaju/com/images/qgz/w_star2_bg_03.png"/*tpa=http://static.jiaju.com/jiaju/com/images/qgz/w_star2_bg_03.png*/) repeat-x scroll 0 -19px rgba(0, 0, 0, 0);
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 82px;
+}
+.little-box-list .first-li .wli-icon-img5 {
+    background: url("../../static.jiaju.com/jiaju/com/images/qgz/renzheng_bg.png"/*tpa=http://static.jiaju.com/jiaju/com/images/qgz/renzheng_bg.png*/) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #7f7f7f;
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    height: 44px;
+    left: 45px;
+    line-height: 44px;
+    position: absolute;
+    text-align: center;
+    top: -46px;
+    width: 133px;
+}
+.w-dbxx .little-box-list li span {
+    color: #ffc000;
+}
+.w-dbxx .little-box-list .first-li a {
+    color: #ffc000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.w-dbxx .little-box-list .first-li {
+    width: 117px;
+}
+.w-dbxx .little-box-list .first-li .fr {
+    color: #999;
+    display: none;
+    font-family: "宋体";
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 0px;
+}
+.little-box-list .first-li {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 0;
+}
+
+        .titlebar
+        {
+            overflow: hidden;
+            width: 1190px;
+            border: none;
+            margin: 210px auto 0 auto;
+        }
+        .titlebar .title
+        {
+            background: rgba(0, 0, 0, 0) url("../images/title-bg.png"/*tpa=http://wh.gz360.com/images/title-bg.png*/) no-repeat scroll right 5px;
+            color: #595656;
+            float: left;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 34px;
+            padding-right: 40px;
+            width: 240px;
+        }
+        .titlebar .tab-navs
+        {
+            height: 26px;
+            margin: 7px 0 0 80px;
+            float: left
+        }
+        .titlebar .tab-navs li
+        {
+            float: left;
+            margin: 0 5px;
+        }
+        .titlebar .tab-navs li a
+        {
+            color: #595757;
+            display: block;
+            font-size: 14px;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 10px;
+        }
+        .titlebar .tab-navs li.active a, .titlebar .tab-navs li a:hover
+        {
+            border-bottom: 2px solid #15ae67;
+        }
+        .titlebar .subtitle
+        {
+            line-height: 40px;
+        }
+        .titlebar .subtitle a
+        {
+            margin-right: 10px;
+        }
+        .Search
+        {
+            border: 1px solid #e3e3e3;
+            border-radius: 24px 0 0 24px;
+            display: table-cell;
+            float: left;
+            font-family: 微软雅黑;
+            height: 24px;
+            line-height: 24px;
+            margin-left: 30px;
+            padding-left: 10px;
+            vertical-align: middle;
+            width: 180px;
+        }
+        .BtnSearch
+        {
+            background: #f39800 none repeat scroll 0 0;
+            border: medium none;
+            border-radius: 0 24px 24px 0;
+            color: #fff;
+            cursor: pointer;
+            display: table-cell;
+            float: left;
+            height: 26px;
+            vertical-align: middle;
+            width: 50px;
+        }
+		
+.StarDetail {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #01a569;
+    height: 400px;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -165px;
+    position: fixed;
+    top: 50%;
+    width: 470px;
+	display:none;
+}
+.StarClose {
+    float: right;
+}
+.StarTitle {
+    background: #01a569 none repeat scroll 0 0;
+    height: 24px;
+    line-height: 24px;
+    margin: 16px auto;
+    text-align: center;
+    width: 125px;
+}
+.StarTitle span {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+}
+.StarContent {
+    margin: 0 30px;
+	line-height:25px;
+    text-indent: 2em;
+}
+.StarContent b {
+    border-bottom: 1px dotted #01a569;
+}
+.StarContent img {
+    width: 395px;
+}

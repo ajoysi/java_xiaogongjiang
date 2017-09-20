@@ -1,0 +1,18 @@
+/* selectBox */
+.sb_sel_box{height:27px; width:200px;border:1px solid #bbb;font-size:12px;color:#999;background:#fff;line-height:27px;position:relative;overflow:visible;z-index:1; }
+.sb_sel_box:hover{border-color:#72a2c6; box-shadow:0px 0px 1px 1px #6bbdef;}
+.sb_sel_now{width:160px;padding:0 30px 0 10px;height:26px;float:left;position:absolute;left:0;top:0;background:url("img/arrow.gif"/*tpa=http://wh.gz360.com/Js/selectbox/img/arrow.gif*/) right top no-repeat;cursor:pointer;overflow:hidden;word-break:break-all;}
+.sb_sel_now:hover{background:url("img/arrow.gif"/*tpa=http://wh.gz360.com/Js/selectbox/img/arrow.gif*/) right bottom no-repeat; text-decoration:none;}
+.sb_sel_drop{width:200px; height:auto; padding:1px 0; background:#fff; position:absolute;left:-1px; top:30px ;border:1px solid #bbb; box-shadow:0px 0px 1px 1px #6bbdef;z-index:2;display:hidden;}
+
+/* 列表 */
+.sb_sel_ul{list-style:none;width:190px;height:auto;margin:0;padding:0;float:left;position:absolute;left:0;top:0;z-index:3;}
+.sb_sel_ul .sb_sel_li{width:100%;height:30px;margin:0;padding:0;float:left;overflow:hidden;}
+.sb_sel_ul .sb_sel_li a{width:100%;height:100%;line-height:30px;margin:0;padding:0;display:block;text-decoration:none;color:#535353;padding-left:10px;word-break:break-all;}
+.sb_sel_ul .sb_sel_li a:hover{ background-color:#02a469; color:#fff;}
+.sb_sel_ul .sb_sel_li .sb_sel_selected{color:#e5934a;}
+
+/* 滚动条 */
+.sb_sel_drop .sb_sel_tract{width:7px;border:1px solid #dcdcdc;margin:0;padding:0;overflow:hidden;position:absolute;border-radius:5px;right:0;top:0;z-index:5;background:#fff;}
+.sb_sel_drop .sb_sel_tract .sb_sel_scroll{width:5px;height:20px;margin:0 1px;padding:0;position:absolute;left:0;top:0;background:#555555;border-radius:5px;cursor:s-resize;}
+

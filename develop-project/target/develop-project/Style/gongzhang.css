@@ -1,0 +1,648 @@
+
+a
+{
+    color: #595757;
+    text-decoration: none;
+}
+p
+{
+    margin: 0 auto;
+}
+a:hover
+{
+    color: #01a569;
+}
+.fz14
+{
+    font-size: 14px;
+}
+.mt10
+{
+    margin-top: 10px;
+}
+.mt20
+{
+    margin-top: 20px;
+}
+.mt30
+{
+    margin-top: 30px;
+}
+.mt60
+{
+    margin-top: 60px;
+}
+.floatL
+{
+    float: left;
+}
+.floatR
+{
+    float: right;
+}
+.location
+{
+    width: 1190px;
+}
+.wrapper-gz
+{
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+.channel
+{
+    overflow: hidden;
+    width: 1190px;
+}
+.txtgreen
+{
+    color: #01A569;
+}
+.titlebar
+{
+    border: medium none;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+.titlebar .more
+{
+    color: #595656;
+    float: right;
+    font-size: 14px;
+}
+.titlebar .title
+{
+    background: rgba(0, 0, 0, 0) url("../images/title-bg-new.png"/*tpa=http://wh.gz360.com/images/title-bg-new.png*/) no-repeat scroll right 5px;
+    color: #595656;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-right: 30px;
+    width: auto;
+}
+.row
+{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row .col-5
+{
+    float: left;
+    margin-bottom: 20px;
+    width: 25%;
+}
+.case-list
+{
+    border: 1px solid #d7d8d8;
+    border-radius: 4px;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+.case-list .pic
+{
+    border-radius: 4px 4px 0 0;
+    height: 195px;
+    overflow: hidden;
+    width: 100%;
+}
+.case-list .pic img
+{
+    height: 170px;
+    width: 100%;
+}
+.case-list .qdje
+{
+    display: block;
+    width: 130px;
+}
+.case-list .info
+{
+    background-color: #3d3938;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 0 10px 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.case-list .info a
+{
+    color: #fff;
+}
+.case-list .info a:hover
+{
+    color: #01a569;
+}
+.case-list .handle
+{
+    background-color: #f7f7f7;
+    border-radius: 0 0 4px 4px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 5px 5px;
+}
+.case-list .handle .see
+{
+    border-left: 1px solid #bbbbbc;
+    padding-left: 5px;
+}
+.case-list .avatar
+{
+    bottom: 30px;
+    height: 64px;
+    left: 12px;
+    overflow: hidden;
+    position: absolute;
+    width: 64px;
+}
+.case-list .avatar img
+{
+    border: 2px solid #15ae67;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.relate-txt
+{
+    line-height: 24px;
+}
+.relate-list
+{
+    overflow: hidden;
+}
+.relate-list .relate
+{
+    border: 1px solid #d3d3d4;
+    height: 119px;
+    margin-bottom: 10px;
+    width: 283px;
+}
+.relate-list .relate a
+{
+    display: block;
+    height: 119px;
+    width: 283px;
+}
+.relate-list .relate img
+{
+    height: 119px;
+    width: 119px;
+}
+.relate-txt
+{
+    padding: 10px;
+    text-align: center;
+    width: 130px;
+}
+.relate-txt .site
+{
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.relate-txt .space
+{
+    border-bottom: 1px dashed #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.part-l
+{
+    float: left;
+    width: 880px;
+}
+.part-r
+{
+    float: right;
+    width: 285px;
+}
+.clist
+{
+    overflow: hidden;
+}
+.comment-list
+{
+    height: 72px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+}
+.comment-list dt
+{
+    float: left;
+    height: 72px;
+    width: 72px;
+}
+.comment-list dt img
+{
+    height: 72px;
+    width: 72px;
+}
+.comment-list dd
+{
+    height: 72px;
+    overflow: hidden;
+    padding-left: 15px;
+}
+.comment-list dd .clearfix
+{
+    padding-bottom: 7px;
+}
+.comment-list dd p
+{
+    line-height: 24px;
+    overflow: hidden;
+}
+.bjList .title
+{
+    font-weight: bold;
+}
+.bjList ul
+{
+    padding: 10px 10px 0 10px;
+}
+.bjList ul li
+{
+    margin-top: 15px;
+    height: 72px;
+    line-height: 72px;
+    border-bottom: 1px dashed #d7d8d8;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.bjList ul li img
+{
+    height: 68px;
+    border-radius: 68px;
+    border: 2px solid #01a569;
+    vertical-align: middle;
+}
+.bjList .title
+{
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #d7d8d8;
+}
+.bjList ul li span
+{
+    width: 16.6%;
+    display: inline-block;
+    text-align: center;
+}
+.footer
+{
+    background-color: #898989;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 1190px;
+    overflow: hidden;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+.footer span
+{
+    padding: 0 10px;
+}
+.footer a
+{
+    color: #fff;
+}
+td, th
+{
+    height: 30px;
+}
+.view-site
+{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #11a84e;
+    height: 160px;
+    left: 50%;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -80px;
+}
+.loginclose
+{
+    background: rgba(0, 0, 0, 0) url("../Images/box_close.jpg"/*tpa=http://wh.gz360.com/Images/box_close.jpg*/) no-repeat scroll 0 0;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 20px;
+    z-index: 1;
+}
+.input
+{
+    border: 1px solid #ccc;
+    height: 27px;
+    padding: 0 5px;
+}
+.regist
+{
+    background-color: #fff8ee;
+    border: 1px solid #efc9b1;
+    color: #6c6c6c;
+    font-size: 12px;
+    padding: 2px 5px;
+    height: 30px;
+    margin-left: 10px;
+}
+.button
+{
+    background-color: #ff9000;
+    border: 1px solid #e77c00;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px auto;
+    text-align: center;
+    width: 210px;
+}
+
+
+.GzInfo
+{
+    background: #F6FBF7;
+    width: 1190px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.GzInfo .i-info-1, .i-info-2, .i-info-3, .i-info-4
+{
+    float: left;
+}
+.GzInfo .i-info-1
+{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #01A569;
+    border-radius: 150px;
+    margin: 0 40px;
+}
+.GzInfo .i-info-1 img
+{
+    border-radius: 150px;
+    height: 150px;
+}
+.GzInfo .i-info-2, .i-info-3
+{
+    width: 242px;
+    padding: 0 40px;
+    border-right: dotted 1px #bbbbbb;
+    height: 150px;
+}
+.GzInfo .i-info-2 ul li
+{
+    height: 30px;
+    line-height: 30px;
+}
+.GzInfo .i-info-3 ul li
+{
+    height: 36px;
+    line-height: 36px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.GzInfo .i-info-4 ul li:first-child{
+	display:none;
+}
+.GzInfo .i-info-4 a
+{
+    background: #f36f20 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin: 25px 80px;
+    text-align: center;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 3px;
+}
+
+.hList ul li
+{
+    float: left;
+    width: 190px;
+    height: 170px;
+    margin: 0 8px;
+	position:relative;
+}
+.hList ul li img
+{
+    width: 190px;
+    height: 170px;
+    border-radius: 3px;
+}
+.hList .prev
+{
+    width: 14.5px;
+    background: url("../Images/Dir.png"/*tpa=http://wh.gz360.com/Images/Dir.png*/) 0 0;
+    height: 29px;
+    float: left;
+    margin: 70px 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.hList .next
+{
+    width: 14.5px;
+    background: url("../Images/Dir.png"/*tpa=http://wh.gz360.com/Images/Dir.png*/) 14px 0;
+    height: 29px;
+    float: right;
+    margin: 70px 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+table td
+{
+    background: #fff none repeat scroll 0 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+table .bglightblue td
+{
+    background: #edf6f1 none repeat scroll 0 0;
+}
+#btnOk
+{
+    background: #11A84E;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+}
+textarea:focus, input[type='text']:focus
+{
+    border: 1px solid #11A84E;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.news-txt
+{
+    line-height: 24px;
+}
+.news-list
+{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #bbb;
+    overflow: hidden;
+}
+.news-list .relate
+{
+    height: 72px;
+    padding: 10px 0;
+    overflow: hidden;
+    width: 283px;
+    border-bottom: 1px dashed #bbbbbb;
+}
+.news-list .relate a
+{
+    display: block;
+    height: 72px;
+    width: 283px;
+}
+.news-list .relate img
+{
+    height: 72px;
+    width: 72px;
+}
+.news-txt
+{
+    margin-left: 10px;
+    width: 200px;
+}
+.news-txt p
+{
+    height: 50px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-txt .site
+{
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news-txt .space
+{
+    border-bottom: 1px dashed #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.bd
+{
+    width: 824px;
+    overflow: hidden;
+    height: 170px;
+    float: left;
+}
+.bd ul li .title {
+    background-color: #3d3938;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.bd ul li .title  span {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bd ul li .title  a {
+    color: #fff;
+}
+.bd ul li .title  a:hover {
+    color: #01a569;
+}
+
+
+.Star {
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 10px 0 5px;
+	cursor:pointer;	
+}
+.Star img {
+    height: 16px;
+	margin-top:-2px;
+}
+.StarDetail {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #01a569;
+    height: 400px;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -165px;
+    position: fixed;
+    top: 50%;
+    width: 470px;
+	display:none;
+}
+.StarClose {
+    float: right;
+}
+.StarTitle {
+    background: #01a569 none repeat scroll 0 0;
+    height: 24px;
+    line-height: 24px;
+    margin: 16px auto;
+    text-align: center;
+    width: 125px;
+}
+.StarTitle span {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+}
+.StarContent {
+    margin: 0 30px;
+	line-height:25px;
+    text-indent: 2em;
+}
+.StarContent b {
+    border-bottom: 1px dotted #01a569;
+}
+.StarContent img {
+    width: 395px;
+}

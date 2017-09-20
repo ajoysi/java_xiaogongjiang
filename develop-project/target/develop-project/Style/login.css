@@ -1,0 +1,345 @@
+@charset "utf-8";
+.login{
+	width:998px;
+	height:430px;
+	padding:50px 0px;
+	/*border:1px solid #e8e8e8;*/
+	margin:10px auto;
+	font-size:14px;
+	}
+.login-L{
+	float:left;
+	width:600px;
+	padding-left:60px;
+	height:430px;
+	border-right:1px solid #e8e8e8;
+	}
+.login-a{
+	height:42px;
+	width:420px;
+	font-size:20px;
+	font-family:微软雅黑;
+	color:#02a469;
+	font-weight:bold;
+	line-height:36px;
+	background:url("../Images/line.gif"/*tpa=http://wh.gz360.com/Images/line.gif*/) no-repeat left bottom;
+	}
+.login-b{
+	height:30px;
+	padding-top:20px;
+	}
+.login-b span{
+	float:left;
+	display:block;
+	}
+.login-c{
+	line-height:30px;
+	width:70px;
+	text-align:right;
+	}
+.login-d,.login-f{
+	display:block;
+	float:left;
+	height:28px;
+	border:1px solid #bbb;
+	line-height:28px;
+	color:#6c6c6c;
+	padding:0 5px;
+	}
+	.login-d:focus,.login-f:focus {
+	    border-color: #11a84e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(75, 172, 255, 0.6);
+    outline: 0 none;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	}
+.login-d{width:205px;}
+.login-e{
+	height:30px;
+	}
+.login-f{width:100px;}
+.login-g{
+	display:block;
+	float:left;
+	line-height:30px;
+	color:#02a469;
+	text-decoration:none;
+	}
+.login-g:hover{
+	text-decoration:underline;
+	}
+.login-h{
+	height:40px;
+	padding-top:20px;
+	padding-left:70px;
+	}
+.login-h input{
+	width:131px;
+	height:40px;
+	line-height:40px;
+	background: url("../Images/btns.gif"/*tpa=http://wh.gz360.com/Images/btns.gif*/) no-repeat 0px -122px;
+	border:0px;
+	color:#fff;
+	cursor:pointer;
+	font-size:16px;
+	font-weight:bold;
+	}
+.login-h input:hover{
+	background: url("../Images/btns.gif"/*tpa=http://wh.gz360.com/Images/btns.gif*/) no-repeat 0px -164px;
+	}
+.login-R{
+	float:left;
+	width:206px;
+	padding-left:40px;
+	}
+.login-i{
+	border-bottom:1px dashed #e2e2e2;
+	height:34px;
+	line-height:34px;
+	font-size:14px;
+	background:url("../Images/ico-2.gif"/*tpa=http://wh.gz360.com/Images/ico-2.gif*/) no-repeat 0px -403px;
+	padding-left:30px;
+	}
+.login-i a{
+	color:#02a469;
+	text-decoration:underline;
+	}
+.login-i a:hover{
+	text-decoration:none;
+	}
+.login-j{
+	border-bottom:1px dashed #e2e2e2;
+	padding:20px 0px;
+	padding-left:13px;
+	}
+.login-k{
+	text-align:center;
+	color:#999;
+	}
+.login-k img{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:20px auto;
+	}
+/*注册*/
+.regist{
+	height:20px;
+	line-height:20px;
+	display:block;
+	float:left;
+	min-width: 120px;
+	border:1px solid #ffd6bd;
+	
+	background:url("../Images/wrong.gif"/*tpa=http://wh.gz360.com/Images/wrong.gif*/) no-repeat 0px -4px;
+	background-color:#fff8ee;
+	font-size:12px;
+	padding-left:30px;
+	margin-top:3px;
+	color:#6c6c6c;
+	text-decoration:none;
+	margin-left:10px;
+	}
+	
+	.regist-tel
+	{
+	    cursor: pointer;
+	line-height: 20px;
+	display: block;
+	float: left;
+	border: 1px solid #ffd6bd;
+	background-color: #fffbf6;
+	font-size: 12px;
+	padding:0 10px;
+	margin-top: 3px;
+	color: #6c6c6c;
+	text-decoration: none;
+	margin-left: 10px;
+	}
+.regist:hover{
+	background-color:#fffbf6;}
+.regist-a,.regist-c{
+	height:30px;
+	line-height:30px;
+	}
+.regist-b{
+	float:left;
+	margin-top:3px;
+	}
+.regist-b label{
+	padding-right:10px;
+	}
+	
+	
+	
+	    a
+        {
+            color: #02a469;
+        }
+        p{margin:0}
+        .login
+        {
+            width: 1190px;
+            margin: 10px auto;
+            height:auto;
+            padding: 50px 0 20px 0;
+        }
+        .LoginBox
+        {
+            width: 420px;
+            margin: 0 auto;
+            border: 1px solid #bbb;
+        }
+        .login .t-login
+        {
+            color: #02a469;
+            font-size: 20px;
+            font-weight: bold;
+            height: 42px;
+            line-height: 36px;
+            border-bottom: #F5A92A 2px solid;
+            margin: 0 34px 20px 34px;
+            padding: 20px 0 10px 0;
+            text-align: center;
+        }
+        .LoginBox ul li
+        {
+            line-height: 60px;
+            text-align: center;
+        }
+        .LoginBox ul li input
+        {
+            border: 1px solid #bbbbbb;
+            width: 330px;
+            height: 34px;
+            padding: 0 10px;
+        }
+        .LoginBox ul li input[type='submit']
+        {
+            border: none;
+            width: 350px;
+            height: 40px;
+            padding: 0 10px;
+            background: #F5AA2C;
+            color: #fff;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .LoginBox ul li input[type='radio']
+        {
+            color: #fff;
+            width: 20px;
+            vertical-align: middle;
+            color: #02a469;
+        }
+        .LoginBox ul li label
+        {
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            
+        }
+        .LoginBox ul li img
+        {
+            vertical-align: middle;
+        }
+        .LoginBox ul li input:focus
+        {
+            border: 1px solid #02a469;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(75, 172, 255, 0.6);
+            outline: 0 none;
+            transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        }
+        .LoginBox ul li .checkcode
+        {
+            width: 140px;
+        }
+        .LoginBox ul li .changcode
+        {
+            color: #02a469;
+            text-decoration: none;
+        }
+        
+        #utTip,#usTip,#pwTip,#reTip,#ckTip{ width: 380px;display: none;}
+        .QdList{ width: 1190px;margin: 20px auto}
+        .titlebar
+        {
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            width: 100%;
+            border: none;margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .titlebar .title
+        {
+            background:  url("../images/title-bg.png"/*tpa=http://wh.gz360.com/images/title-bg.png*/) no-repeat scroll right 5px;
+            color: #595656;
+            float: left;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 34px;
+            padding-right: 40px;
+        }
+        .relate-txt
+        {
+            line-height: 24px;
+        }
+        .relate-list
+        {
+            height: 514px;
+            overflow: hidden;
+            height: 123px;
+            overflow: hidden;
+        }
+        .relate-list .relate
+        {
+            border: 1px solid #d3d3d4;
+            height: 119px;
+            margin-bottom: 12px;
+            width: 283px;
+            margin-left: 10px;
+            float: left;
+            
+        }
+        .relate-list .relate a
+        {
+            display: block;
+            height: 119px;
+            width: 283px;
+        }
+        .relate-list .relate img
+        {
+            height: 119px;
+            width: 119px;
+        }
+        .relate-txt
+        {
+            padding: 10px;
+            text-align: center;
+            width: 130px;
+        }
+        .relate-txt .site
+        {
+            font-size: 18px;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .relate-txt .space
+        {
+            border-bottom: 1px dashed #ccc;
+            font-size: 14px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        .pull-right
+        {
+            float: right;
+        }
+.pull-left{float: left;}
+.usermobile #mobile{ width: 215px;}
+.usermobile #smssend{ width: 110px;background-color: #fffbf6;
+    border: 1px solid #ffd6bd;cursor: pointer;color: #6c6c6c;padding: 0}

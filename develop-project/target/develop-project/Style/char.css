@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*零工详细页*/
+.char-{
+	width:250px;
+	float:left;
+	}
+.char{
+	width:145px;
+	text-align:right;
+	color:#000;
+	}
+.jg a{
+	color:#01a569;
+	text-decoration:underline;
+	}
+.jg a:hover{
+	text-decoration:none;
+	}
+.egg_num{background-position: 0 -92px;}
+.place_gd{background-position: 0 -64px;}
+.update{
+	background:url("../images/icons.gif"/*tpa=http://wh.gz360.com/images/icons.gif*/) 0 -39px no-repeat;
+	background-position: 0px -313px;
+	height:30px;
+	line-height:30px;
+	padding-left:20px;
+	}
+.update em{
+	color:#00a566;
+	}
+.char-a{
+	margin-top:10px;
+	}
+.char-b{
+	width:725px;
+	height:350px;
+	}
+.char-b img{
+	width:725px;
+	height:350px;
+	}
+.char-c{
+	border:1px solid #e8e8e8;
+	width:723px;
+	margin-top:10px;
+	}
+	
+/*找零工列表样式*/	
+.char-d{
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	color:#666;
+	font-weight:bold;
+	padding:20px 0px;
+	}
+.char-d span{
+	display:block;
+	float:left;
+	text-align:center;
+	}
+.char-e{ width:65px;border-right:1px solid #d7d7d7;}
+.char-f{ width:83px;border-right:1px solid #d7d7d7;}
+.char-g{ width:120px;border-right:1px solid #d7d7d7;}
+.char-h{ width:80px; _width:70px;}
+.char-i,.char-i-no{
+	height:32px;
+	line-height:32px;
+	}
+.char-i{background-color:#f6f6f6;}
+.char-i span,.char-i-no span{
+	display:block;
+	text-align:center;
+	float:left;
+	height:32px;
+	}
+.char-j{ width:66px;}
+.char-k{ width:84px;}
+.char-l{ width:121px;}
+.char-l a{ display:block; width:64px; height:20px; background-color:#00a566; color:#fff; text-decoration:none; margin:6px 0px 0px 28px; line-height:20px;}
+.char-l a:hover{background-color:#09b875;}
+.char-l .tel-nub{color:#09b875; background-color:#fff; width:90px; text-align:center;margin:5px 0px 0px 15px; border:1px solid #bbb;}
+.char-l .tel-nub:hover{color:#09b875; background-color:#fff; width:90px; text-align:center;margin:5px 0px 0px 15px; border:1px solid #bbb;}
+.char-m{ width:80px; _width:70px;}
+.char-m a{ color:#00a566; text-decoration:none;}
+.char-m a:hover{ text-decoration:underline;}

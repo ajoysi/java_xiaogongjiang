@@ -1,0 +1,588 @@
+.titlebar
+{
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    margin: 20px auto 0 auto;
+}
+.titlebar .title
+{
+    background: url("../images/title-bg.png"/*tpa=http://wh.gz360.com/images/title-bg.png*/) no-repeat scroll right 5px;
+    color: #595656;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 34px;
+    padding-right: 40px;
+    width: auto;
+}
+.titlebar .tab-navs
+{
+    height: 26px;
+    margin: 7px 0 0 80px;
+    float: left;
+}
+.titlebar .tab-navs li
+{
+    float: left;
+    margin: 0 5px;
+}
+.titlebar .tab-navs li a
+{
+    color: #595757;
+    display: block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+.titlebar .tab-navs li.active a, .titlebar .tab-navs li a:hover
+{
+    border-bottom: 2px solid #15ae67;
+}
+.titlebar .subtitle
+{
+    line-height: 40px;
+}
+.titlebar .subtitle a
+{
+    margin-right: 10px;
+}
+.Search
+{
+    border: 1px solid #e3e3e3;
+    border-radius: 24px 0 0 24px;
+    display: table-cell;
+    float: left;
+    font-family: 微软雅黑;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 30px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 180px;
+}
+.BtnSearch
+{
+    background: #f39800 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0 24px 24px 0;
+    color: #fff;
+    cursor: pointer;
+    display: table-cell;
+    float: left;
+    height: 26px;
+    vertical-align: middle;
+    width: 50px;
+}
+.main
+{
+    width: 1190px;
+    border: none;
+    font-size: 14px;
+}
+.main a
+{
+    color: #595757;
+}
+.main a:hover
+{
+    color: #11a84e;
+}
+.g-left
+{
+    width: 860px;
+}
+.g-right
+{
+    width: 285px;
+}
+
+.gd-item
+{
+    height: 230px;
+    width: 100%;
+    border: solid 1px #D7D8D8;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.gd-status
+{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.gd-item .gd-left
+{
+    width: 230px;
+    position: relative;
+    border-right: solid 1px #e3e3e3;
+}
+.gd-item .gd-left .pic img
+{
+    height: 170px;
+    width: 100%;
+    border-radius: 3px 0 0 0;
+}
+.gd-item .gd-left .pic .info
+{
+    background-color: #3d3938;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 0 10px 0 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gd-item .gd-left .pic .info a
+{
+    color: #fff;
+}
+.gd-item .gd-left .avatar
+{
+    bottom: 35px;
+    height: 64px;
+    left: 12px;
+    overflow: hidden;
+    position: absolute;
+    width: 64px;
+}
+.gd-item .gd-left .avatar img
+{
+    border: 2px solid #15ae67;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.gd-item .gd-left .handle
+{
+    background-color: #f7f7f7;
+    border-radius: 0 0 4px 4px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+
+.gd-item .gd-left .see
+{
+    border-left: 1px solid #bbbbbc;
+    padding-left: 10px;
+}
+.gd-item .gd-left .handle .gzname
+{
+    width: 100px;
+    display: block;
+}
+.relate-list
+{
+    overflow: hidden;
+}
+.relate-txt
+{
+    line-height: 24px;
+}
+.relate-list
+{
+    height: 514px;
+    overflow: hidden;
+}
+.relate-list .relate
+{
+    border: 1px solid #d3d3d4;
+    height: 119px;
+    margin-bottom: 10px;
+    width: 283px;
+}
+.relate-list .relate a
+{
+    display: block;
+    height: 119px;
+    width: 283px;
+}
+.relate-list .relate img
+{
+    height: 119px;
+    width: 119px;
+}
+.relate-txt
+{
+    padding: 10px;
+    text-align: center;
+    width: 130px;
+}
+.relate-txt .site
+{
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.relate-txt .space
+{
+    border-bottom: 1px dashed #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.gd-right
+{
+    padding: 30px 0;
+    width: 599px;
+    display: block;
+}
+.gd-title
+{
+    width: 100%;
+    overflow: hidden;
+}
+.gd-title .des-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #11A84E;
+    max-width: 230px;
+    text-overflow: ellipsis;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.gd-title span
+{
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 30px;
+}
+.gd-title span a
+{
+    padding: 5px 30px;
+    color: #fff;
+    background: #F69418;
+    border-radius: 3px;
+    text-align: center;
+}
+.gd-result > span
+{
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 0 10px 30px;
+}
+.gd-result > div
+{
+    font-size: 14px;
+    margin-left: 30px;
+    max-height: 115px;
+    overflow: hidden;
+}
+.gd-result .ico-t
+{
+    background: url("../images/ico-t.png"/*tpa=http://wh.gz360.com/images/ico-t.png*/) repeat scroll 0 0;
+    display: inline-block;
+    height: 14px;
+    margin-left: 3px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 8px;
+}
+.gz-list
+{
+    border: 1px solid #e3e3e3;
+}
+.gz-item
+{
+    overflow: hidden;
+    padding: 10px 0;
+}
+.gz-item img
+{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+}
+.l-content
+{
+    line-height: 24px;
+    margin-left: 3px;
+}
+.l-content i
+{
+    background: #ea5415 none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+}
+.l-title
+{
+    margin-top: 10px;
+}
+.l-num
+{
+    margin-top: 10px;
+}
+.l-title b
+{
+    margin-left: 10px;
+}
+.l-area
+{
+    margin-top: 5px;
+}
+.l-img
+{
+    margin-left: 5px;
+}
+.supDes p{line-height:28px;}
+.location
+{
+    width: 1190px;
+}
+.Main
+{
+    width: 1192px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 72px;
+}
+.Main .logo
+{
+    width: 15%;
+    text-align: center;
+}
+.Main img
+{
+    width: 62px;
+    border-radius: 62px;
+    border: solid 2px #11A84E;
+    margin-top: 2px;
+}
+.Main .title
+{
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 70px;
+    line-height: 70px;
+}
+.Main .des
+{
+    width: 70%;
+}
+.Main .title .des span
+{
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 30px;
+    height: 30px;
+}
+.Main .title .des .des-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #11A84E;
+}
+.Main .title .des span a
+{
+    padding: 5px 30px;
+    color: #fff;
+    background: #F69418;
+    border-radius: 3px;
+    text-align: center;
+}
+.supmain
+{
+    width: 1190px;
+    color: #666;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.suptitle
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 5px 0;
+    border-bottom: dashed 1px #ccc;
+}
+.suptitle h2
+{
+    color: #009A58;
+}
+.suptitle p
+{
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+}
+.suplist
+{
+    width: 100%;
+    padding-top: 10px;
+}
+.supitem
+{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.supImg
+{
+    position: relative;
+    height: 240px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.suptime
+{
+    position: absolute;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    background: #009a58;
+    color: #fff;
+    margin-top: -20px;
+    border-radius: 3px;
+    text-align: center;
+}
+.suptime span
+{
+    padding-top: 5px;
+    display: block;
+}
+.suptime span b
+{
+    font-size: 16px;
+}
+
+.supobj
+{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #009a58;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.supdetail > span
+{
+    padding: 0 10px 5px 100px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+.supdetail .supDes
+{
+    padding: 0 10px 5px 100px;
+}
+.supdetail .imgBox
+{
+    margin-left: 50px;
+}
+.supdetail .i-left
+{
+    width: 8%;
+    margin: 0 2%;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.supdetail .i-center
+{
+    width: 75%;
+    height: 240px;
+}
+
+.supdetail .i-right
+{
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.i-center .bd ul
+{
+    overflow: hidden;
+    zoom: 1;
+}
+.i-center .bd ul li
+{
+    display: inline-block;
+    width: 170px;
+    _display: inline;
+    overflow: hidden;
+}
+.i-center .bd ul li img
+{
+    width: 160px;
+    height: 240px;
+    border: 1px solid #ccc;
+    margin-left: 2px;
+}
+.i-center .bd ul li a:hover img
+{
+    border-color: #009a58;
+}
+.ShowBox
+{
+    padding: 4px 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    background: #fff;
+}
+.loginclose
+{
+    background: url("../Images/box_close.jpg"/*tpa=http://wh.gz360.com/Images/box_close.jpg*/) no-repeat scroll 0 0;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 20px;
+    z-index: 1;
+}
+.supitem .ico-t
+{
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url("../images/ico-t.png"/*tpa=http://wh.gz360.com/images/ico-t.png*/);
+    margin-left: 3px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+.footer
+{
+    background-color: #898989;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 1190px;
+    overflow: hidden;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+.footer span
+{
+    padding: 0 10px;
+}
+.footer a
+{
+    color: #fff;
+}

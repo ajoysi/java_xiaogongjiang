@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../favico.ico" type="image/x-icon" />
+<title>
+	施工包平台
+</title><link href="../Style/index.css" tppabs="http://xiaogongjiang.com/Style/index.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Js/jquery.min.1.8.js" tppabs="http://xiaogongjiang.com/Js/jquery.min.1.8.js"></script>
+    <script src="../Js/common.js" tppabs="http://xiaogongjiang.com/Js/common.js" type="text/javascript"></script>
+    <style type="text/css">
+        .Service
+        {
+            width: 100%;
+        }
+        .BgRed
+        {
+            background: #E93429;
+        }
+        .BgLightGreen
+        {
+            background: #8FC320;
+        }
+        .BgBlue
+        {
+            background:#15AE67;
+        }
+        .sfbz
+        {
+            padding: 50px;
+            width: 245px;
+            margin: 0 auto;
+        }
+        .sfbz a
+        {
+            display: inline-block;
+            width: 245px;
+            background: #fff;
+            color: #E93429;
+            font-size: 24px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 7px 0;
+        }
+        .i-sfbz
+        {
+            height: 280px;
+            border: #fff 2px solid;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #fff;
+        }
+        .i-sfbz span
+        {
+            font-size: 35px;
+            display: inline-block;
+            padding: 20px 0 10px 0;
+        }
+        .i-sfbz ul
+        {
+            width: 180px;
+            margin: 0 auto;
+        }
+        .i-sfbz li
+        {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .i-sfbz li i
+        {
+            font-size: 80px;
+        }
+        .ServiceDes
+        {
+            height: auto;
+            width: 1190px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        
+        .titlebar
+        {
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            width: 100%;
+            padding: 50px 0;
+        }
+        .titlebar .title
+        {
+            background: url("../images/title-bg.png"/*tpa=http://wh.gz360.com/images/title-bg.png*//*tpa=http://wh.gz360.com/images/title-bg.png*/) no-repeat scroll right 5px;
+            color: #595656;
+            float: left;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 34px;
+            padding-right: 40px;
+        }
+        
+        .ServiceDes ul li
+        {
+            line-height: 50px;
+            font-size: 24px;
+        }
+        .ServiceDes ul li .snum
+        {
+            color: #e93429;
+            font-weight: bold;
+            float: left;
+            width: 3%;
+        }
+        .ServiceDes ul li .scon
+        {
+            float: left;
+            width: 97%;
+            font-weight: normal;
+        }
+        .shlc
+        {
+            height: 104px;
+        }
+        .shlc div
+        {
+            width: 186px;
+            height: 100px;
+            border-radius: 3px;
+            border: 2px solid #B8B8B8;
+            float: left;
+            text-align: center;
+            display: table;
+            vert-align: middle;
+            font-size: 24px;
+        }
+        .shlc div span
+        {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .shlc p
+        {
+            width: 60px;
+            height: 100px;
+            float: left;
+        }
+        .brand
+        {
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+        .brand ul li
+        {
+            float: left;
+            width: 256px;
+            margin-left: 36px;
+            border: #b8b8b8 1px solid;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .fcps
+        {
+            text-align: center;
+            height: 60px;
+            padding: 200px 0
+        }
+    </style>
+</head>
+<body>
+    <div class="header clearfix fixedxy" style="width:1350px;">
+    <div class="login-box pull-left">
+        <a class="login mr10" href="../index.htm" tppabs="http://xiaogongjiang.com/" >
+            <img src="../images/logo-index.png" tppabs="http://xiaogongjiang.com/images/logo-index.png" alt="大工匠-装修省钱没烦恼" title="大工匠-装修省钱没烦恼" /></a>
+<!-- <div  style="margin:-39px 0 0 150px;"><img alt="" src="../images/sublogos.png" tppabs="http://xiaogongjiang.com/images/sublogos.png" /></div>	 -->
+		<!--<div  style=";font-size:16px; margin:-32px 0 0 160px;  height:50px;"><span style="margin:40px 0 0 0px;">砍掉装修公司中间环节，装修就是省！</span></div>-->
+	</div>
+     <ul class="navbar pull-left">
+        <li id="nav-1"><a href="../index.htm" tppabs="http://xiaogongjiang.com/" title="首页">首页</a></li>
+		<li id="nav-2"><a   href="index.html" tppabs="http://xiaogongjiang.com/shigongbao/" title="施工包">施工包 </a></li>
+        <li id="nav-3"><a   href="../zhuchaibao/index.html" tppabs="http://xiaogongjiang.com/zhuchaibao/" title="主材包">主材包 </a></li>
+       
+		<!--<li id="nav-6"><a target="_blank" href="../gongren/" title="找工人">找工人</a></li>-->
+        <li id="nav-5"><a  href="../zb/bjsh.html" tppabs="http://xiaogongjiang.com/baojia/" title="装修报价">装修报价服务</a></li>
+        <li id="nav-5"><a  href="../zb/yybj.htm" tppabs="http://xiaogongjiang.com/gongdi/" title=" 预约报价"> 预约报价</a></li>
+        <li id="nav-6"><a  href="../Comment/index.htm" tppabs="http://xiaogongjiang.com/Comment/" title="业主评价">业主评价</a></li>
+		 <li id="nav-4"><a  href="../zb/about.html" tppabs="http://xiaogongjiang.com/zb/about.htm" title="关于我们">关于我们</a></li>
+    </ul>
+    <div class="log-reg pull-right" id="LogPanel">
+	<div style="float:left;margin:30px 0 0 0px;">
+	  <a rel="nofollow" style="background-color:#f39800;color:#fff" class="reg" href="../Member/Join.aspx.htm" tppabs="http://xiaogongjiang.com/Member/Join.aspx" title="快速注册">免费注册</a>
+		<a rel="nofollow" class="log" href="../Member/Login.aspx.htm" tppabs="http://xiaogongjiang.com/Member/Login.aspx" title="工长登录">一键登录</a></div>
+        <!-- <a rel="nofollow" style="background-color:#f39800;color:#fff" class="reg" href="../Member/msglogin.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msglogin.aspx" title="查看报价">查看报价</a> -->
+		<!-- <a rel="nofollow" class="log" href="../Member/Login.aspx.htm" tppabs="http://xiaogongjiang.com/Member/Login.aspx" title="工长登录">工长登录</a></div> -->
+		<div style="float:right;" >
+		<div class="slideTxtBox" id="slideTxtBox">
+    <div class="bd">
+        <ul>
+            <li><a target="_blank" href="../ZT/201506/gzjm.aspx.htm" tppabs="http://xiaogongjiang.com/ZT/201506/gzjm.aspx" ><img src="../images/gzjm.jpg" tppabs="http://xiaogongjiang.com/images/gzjm.jpg" alt="工长加盟" /></a></li>
+			<li><a target="_blank" href="../ZT/zsjm/index.htm" tppabs="http://xiaogongjiang.com/ZT/zsjm/" ><img src="../images/zsjm.jpg" tppabs="http://xiaogongjiang.com/images/zsjm.jpg" alt="招商加盟" /></a></li>
+        </ul>
+            
+    </div>
+</div>
+</div>
+    </div>
+	<style>
+	.slideTxtBox {
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    width: 150px;
+}
+.slideTxtBox .hd {
+    bottom: 5px;
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+.slideTxtBox .hd ul {
+    float: left;
+    overflow: hidden;
+    
+}
+.slideTxtBox .hd ul li {
+    background: #fff none repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 10px;
+    line-height: 10px;
+    margin-right: 4px;
+    text-align: center;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc;
+}
+
+.slideTxtBox .bd {
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+.slideTxtBox .bd li {
+    vertical-align: middle;
+}
+.slideTxtBox .bd img {
+    display: block;
+    height: 60px;
+    width: 150px;
+}
+.margintopxy{
+margin-top:85px;}
+
+	</style>
+    <div class="pull-right">
+        <div class="select-city">
+            <p>
+                武汉</p>
+            <div class="selectbox" style="display: none;">
+                <dl>
+                    <dt>已开通城市</dt>
+                    <dd>
+                        <a rel="nofollow" href="../-city=wh.htm" tppabs="http://xiaogongjiang.com/?city=wh">武汉</a>
+						<a rel="nofollow" href="javascript:void0;"
+						tppabs="http://yt.gz360.com/?city=yt">烟台</a></dd>
+                </dl>
+                <dl>
+                    <dt>即将开通城市</dt>
+                    <dd>
+                        <a >上海</a><a >广州</a><a >深圳</a><a >天津</a> <a>重庆</a><a >杭州</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../Js/jquery.cookie.js" tppabs="http://xiaogongjiang.com/Js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#LogPanel").ready(function () {
+        var s = $.cookie("user");
+        var name = getCookie(decodeURIComponent(s), "name");
+        if (name.length > 0) {
+            $("#LogPanel").html("<span class=\"l-user\">" + name + "</span><a class=\"l-user\" href=\"../Member/\">进入会员中心</a><a class=\"o-user\" href=\"javascript:LogOut();\">退出登录</a>");
+        }
+
+    });
+    function getCookie(cookstr, name) {//获取指定名称的cookie的值
+        var str = "";
+        var arrStr = cookstr.split("&");
+        for (var i = 0; i < arrStr.length; i++) {
+            var start = arrStr[i].indexOf("=") + 1;
+            var end = arrStr[i].length;
+            if (arrStr[i].indexOf(name) > -1) {
+                if (arrStr[i].indexOf("=") > -1) {
+                    str = arrStr[i].substr(start, end);
+                }
+            }
+        }
+        return str;
+    }
+
+    function LogOut() {
+        $.cookie('user', null, { path: '/' });
+        $("#LogPanel").html("<a class=\"log\" href=\"/ZT/201506/gzjm.aspx\">工长入驻</a><a class=\"reg\" href=\"../Member/Login.aspx\">登录或注册</a>");
+    }
+</script>
+    <div class="main">
+        <div class="Service BgBlue margintopxy">
+            <div class="fcps">
+			<p style="font-size: 36px;color: #FDF100;">
+                    施工套餐</p>
+                <p style="font-size: 40px;color: #fff;font-weight: bold">
+                    ———&nbsp;&nbsp;大工匠级施工套餐368元/平（半包含辅材）&nbsp;&nbsp;———</p>
+                
+            </div>
+        </div>
+        <div class="ServiceDes">
+            <div class="titlebar">
+                <div class="title">
+                    施工包说明</div>
+            </div>
+            <!-- <ul> -->
+                <!-- <li >此项服务，已包含在工长给业主的装修报价中，业主无须再承担任何费用！<span style="color: #15AE67"> -->
+				<!-- （业主自行购买辅材的除外）</span> -->
+                <!-- </li> -->
+            <!-- </ul> -->
+            <!-- <div class="titlebar"> -->
+                <!-- <div class="title"> -->
+                    <!-- 服务范围</div> -->
+            <!-- </div> -->
+            <!-- <ul> -->
+                <!-- <li >所有通过大工匠平台选择工长并与之签订装修合同的业主。 </li> -->
+                <!-- <li >以下情况，大工匠不予提供“辅材直供”服务：</li> -->
+                <!-- <li><span class="snum">01</span><span class="scon">业主未通过大工匠平台装修，或未通过平台与工长私下签订装修合同的。</span></li> -->
+                <!-- <li><span class="snum">02</span><span class="scon">业主明确要求不采用平台“辅材直供”服务的。</span> -->
+				<!-- </li> -->
+            <!-- </ul> -->
+            <!-- <div class="titlebar"> -->
+                <!-- <div class="title"> -->
+                    <!-- 服务承诺</div> -->
+            <!-- </div> -->
+			
+            <ul>
+                <li><span class="snum">01</span><p class="scon">
+                    大工匠级工人施工。</p>
+                </li>
+                <li><span class="snum">02</span><span class="scon">最先进的施工工具和设备，没有金刚钻不揽瓷器活。</span></li>
+                <li><span class="snum">03</span><span class="scon">武汉二厂全系多芯线。</span></li>
+				<li><span class="snum">04</span><span class="scon">水管全部采用抗菌技术。</span></li>
+				<li><span class="snum">05</span><span class="scon">东方雨虹上市公司防水一体化施工，质保二十年。</span></li>
+               	<li><span class="snum">06</span><span class="scon">德国标准瓷砖铺贴工艺。</span></li>
+				<li><span class="snum">07</span><span class="scon">墙面采用全房前期找平工艺，杜绝因结构和墙体不规整带来的问题。</span></li>
+
+            </ul>
+            <div class="titlebar">
+                <div class="title">
+                    施工套餐效果展示：</div>
+            </div>
+            <div class="brand">
+                <ul>
+                    <li>
+                        <img src="../Images/hzpp/hz-01.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-01.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-02.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-02.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-03.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-03.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-04.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-04.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-05.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-05.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-06.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-06.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-07.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-07.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-08.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-08.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-09.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-09.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-10.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-10.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-11.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-11.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-12.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-12.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-13.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-13.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-14.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-14.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-15.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-15.gif" /></li>
+                    <li>
+                        <img src="../Images/hzpp/hz-16.gif" tppabs="http://xiaogongjiang.com/Images/hzpp/hz-16.gif" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt30">
+    <p>
+        <a target="_blank" rel="nofollow" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/connect.html" title="联系我们">联系我们</a>&nbsp;|&nbsp;<a rel="nofollow" title="关于我们" href="javascript:if(confirm('http://wh.gz360.com/about/about.html  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ���ļ������û������ѱ���ֹ����ù����ѱ�ֹͣ��  \n\n����Ҫ�ӷ�����������?'))window.location='http://wh.gz360.com/about/about.html'" tppabs="http://xiaogongjiang.com/about/about.html">关于我们</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/link.html" title="友情链接">友情链接</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/help.html" title="帮助中心">帮助中心</a>&nbsp;|&nbsp;<a  target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/jobs.html" rel="nofollow" title="高薪诚聘">高薪诚聘</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/falv.html" title="法律申明">法律申明</a>&nbsp;|&nbsp;
+        <a rel="nofollow" target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/sitemap.html" title="网站地图">网站地图</a>
+    </p>
+    <p>
+        © 2017 gz360.com 版权：武汉工长三六零电子商务有限公司</p>大工匠 地址:武汉市东湖新技术开发区关山村保利.茉莉公馆一区9幢4层17号
+    <p>
+        鄂ICP备17019434号-1
+		 		<a target="_blank" href="javascript:void0;" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000329" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../beian.png" tppabs="http://xiaogongjiang.com/beian.png" style="float:left;"/></a>
+
+    </p><script type="text/javascript">        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253376399'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1253376399%26l%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "../../hm.baidu.com/hm.js-1a49dfe219178bbc406d995aa7b09728"/*tpa=http://hm.baidu.com/hm.js?1a49dfe219178bbc406d995aa7b09728*/;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+	<a  key ="54c89b2ec274e71c5265cc12"  logo_size="83x30"  logo_type="realname"  href="javascript:void0;" tppabs="http://www.anquan.org/" rel="nofollow" target="_blank"><script src="../../static.anquan.org/static/outer/js/aq_auth.js" tppabs="http://static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+</div>
+
+<div style="right: 10px;" class="scroll">
+    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="ts">
+        </div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="ts-1">
+            半包咨询</div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="gzjm">
+            整装咨询</div>
+    </a><a target="_blank" href="../ZT/zsjm/index.htm" tppabs="http://xiaogongjiang.com/ZT/zsjm/">
+        <div class="sjsjm">
+            招商加盟</div>
+    </a><a target="_blank" rel="nofollow" href="../Member/msglogin.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msglogin.aspx">
+        <div class="fzjm">
+            查看报价</div>
+        </a><a target="_blank" rel="nofollow" href="../Member/msgloginforcom.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msgloginforcom.aspx">
+                <div class="qzzp">
+                    评价工长</div>
+
+            </a>
+    <a target="_blank" rel="nofollow">
+        <div class="gt">
+            回到顶部
+        </div>
+    </a>
+    
+</div>
+<style type="text/css">
+    .scroll
+    {
+        top: 217px;
+        cursor: pointer;
+        height: 150px;
+        width: 90px;
+        color: #333333;
+        position: fixed;
+        _position: absolute; /*兼容IE6*/
+        _top: expression(eval(document.documentElement.scrollTop)+595); /*700为图片距离顶部的设定距离，可以修改。不加700则图片紧贴在顶部滚动*/
+        z-index: 1000;
+    }
+    .scroll a
+    {
+        text-decoration: none;
+    }
+    .ts
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 0 transparent;
+        height: 102px;
+    }
+    .ts-1
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -102px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .ts-1:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -102px transparent;
+        color: #fff;
+    }
+    .gzjm
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -102px transparent;
+        height: 35px;
+        line-height: 25px;
+        color: #109566;
+        padding-left: 27px;
+        font-size: 14px;
+    }
+    .gzjm:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -103px transparent;
+        color: #fff;
+    }
+    .sjsjm
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -102px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .sjsjm:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -103px transparent;
+        color: #fff;
+    }
+    .fzjm
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -210px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .fzjm:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -210px transparent;
+        color: #fff;
+    }
+    .qzzp
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -245px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .qzzp:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -245px transparent;
+        color: #fff;
+    }
+    .gt{background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -280px transparent;
+        height: 36px;
+        line-height: 28px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;;}
+    .gt:hover{background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -280px transparent;
+        
+        color: #fff;}
+    html
+    {
+        _text-overflow: ellipsis;
+    }
+/*解决IE6下图片抖动*/
+</style>
+<script type="text/javascript">
+    $(".gt").click(function () {
+        $("html,body").animate({ scrollTop: 0 }, 200);
+        //document.documentElement.scrollTop = 0;
+        //document.body.scrollTop = 0;
+    });
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '../../push.zhanzhang.baidu.com/push.js'/*tpa=http://push.zhanzhang.baidu.com/push.js*/;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</body>
+</html>

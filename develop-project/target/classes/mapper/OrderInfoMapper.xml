@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.develop.dao.OrderInfoMapper">
+  <resultMap id="BaseResultMap" type="com.develop.entity.OrderInfo">
+    <id column="custom_id" jdbcType="INTEGER" property="customId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="dec_method" jdbcType="VARCHAR" property="decMethod" />
+    <result column="house_area" jdbcType="VARCHAR" property="houseArea" />
+    <result column="quote_price" jdbcType="VARCHAR" property="quotePrice" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <!--<sql id="Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Update_By_Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="example.oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Base_Column_List">-->
+    <!--custom_id, user_name, area, dec_method, house_area, quote_price, create_time-->
+  <!--</sql>-->
+  <!--<select id="selectByExample" parameterType="com.develop.entity.OrderInfoExample" resultMap="BaseResultMap">-->
+    <!--select-->
+    <!--<if test="distinct">-->
+      <!--distinct-->
+    <!--</if>-->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+    <!--<if test="orderByClause != null">-->
+      <!--order by ${orderByClause}-->
+    <!--</if>-->
+  <!--</select>-->
+  <!--<select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+    <!--delete from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</delete>-->
+  <!--<delete id="deleteByExample" parameterType="com.develop.entity.OrderInfoExample">-->
+    <!--delete from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info (custom_id, user_name, area, -->
+      <!--dec_method, house_area, quote_price, -->
+      <!--create_time)-->
+    <!--values (#{customId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, -->
+      <!--#{decMethod,jdbcType=VARCHAR}, #{houseArea,jdbcType=VARCHAR}, #{quotePrice,jdbcType=VARCHAR}, -->
+      <!--#{createTime,jdbcType=TIMESTAMP})-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--custom_id,-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--user_name,-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area,-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method,-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area,-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price,-->
+      <!--</if>-->
+      <!--<if test="createTime != null">-->
+        <!--create_time,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--#{customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--#{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--#{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--#{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--#{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--#{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="createTime != null">-->
+        <!--#{createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByExampleSelective" parameterType="map">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="record.customId != null">-->
+        <!--custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="record.userName != null">-->
+        <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.area != null">-->
+        <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.decMethod != null">-->
+        <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.houseArea != null">-->
+        <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.quotePrice != null">-->
+        <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.createTime != null">-->
+        <!--create_time = #{record.createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByExample" parameterType="map">-->
+    <!--update order_info-->
+    <!--set custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR},-->
+      <!--create_time = #{record.createTime,jdbcType=TIMESTAMP}-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="userName != null">-->
+        <!--user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price = #{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="createTime != null">-->
+        <!--create_time = #{createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--set user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{quotePrice,jdbcType=VARCHAR},-->
+      <!--create_time = #{createTime,jdbcType=TIMESTAMP}-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<resultMap id="BaseResultMap" type="com.develop.entity.OrderInfo">-->
+    <!--<id column="custom_id" jdbcType="INTEGER" property="customId" />-->
+    <!--<result column="user_name" jdbcType="VARCHAR" property="userName" />-->
+    <!--<result column="area" jdbcType="VARCHAR" property="area" />-->
+    <!--<result column="dec_method" jdbcType="VARCHAR" property="decMethod" />-->
+    <!--<result column="house_area" jdbcType="VARCHAR" property="houseArea" />-->
+    <!--<result column="quote_price" jdbcType="VARCHAR" property="quotePrice" />-->
+    <!--<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />-->
+  <!--</resultMap>-->
+  <!--<sql id="Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Update_By_Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="example.oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Base_Column_List">-->
+    <!--custom_id, user_name, area, dec_method, house_area, quote_price, create_time-->
+  <!--</sql>-->
+  <!--<select id="selectByExample" parameterType="com.develop.entity.OrderInfoExample" resultMap="BaseResultMap">-->
+    <!--select-->
+    <!--<if test="distinct">-->
+      <!--distinct-->
+    <!--</if>-->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+    <!--<if test="orderByClause != null">-->
+      <!--order by ${orderByClause}-->
+    <!--</if>-->
+  <!--</select>-->
+  <!--<select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+    <!--delete from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</delete>-->
+  <!--<delete id="deleteByExample" parameterType="com.develop.entity.OrderInfoExample">-->
+    <!--delete from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info (custom_id, user_name, area, -->
+      <!--dec_method, house_area, quote_price, -->
+      <!--create_time)-->
+    <!--values (#{customId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, -->
+      <!--#{decMethod,jdbcType=VARCHAR}, #{houseArea,jdbcType=VARCHAR}, #{quotePrice,jdbcType=VARCHAR}, -->
+      <!--#{createTime,jdbcType=TIMESTAMP})-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--custom_id,-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--user_name,-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area,-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method,-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area,-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price,-->
+      <!--</if>-->
+      <!--<if test="createTime != null">-->
+        <!--create_time,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--#{customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--#{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--#{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--#{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--#{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--#{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="createTime != null">-->
+        <!--#{createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByExampleSelective" parameterType="map">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="record.customId != null">-->
+        <!--custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="record.userName != null">-->
+        <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.area != null">-->
+        <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.decMethod != null">-->
+        <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.houseArea != null">-->
+        <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.quotePrice != null">-->
+        <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.createTime != null">-->
+        <!--create_time = #{record.createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByExample" parameterType="map">-->
+    <!--update order_info-->
+    <!--set custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR},-->
+      <!--create_time = #{record.createTime,jdbcType=TIMESTAMP}-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="userName != null">-->
+        <!--user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price = #{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="createTime != null">-->
+        <!--create_time = #{createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--set user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{quotePrice,jdbcType=VARCHAR},-->
+      <!--create_time = #{createTime,jdbcType=TIMESTAMP}-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<resultMap id="BaseResultMap" type="com.develop.entity.OrderInfo">-->
+    <!--<id column="custom_id" jdbcType="INTEGER" property="customId" />-->
+    <!--<result column="user_name" jdbcType="VARCHAR" property="userName" />-->
+    <!--<result column="area" jdbcType="VARCHAR" property="area" />-->
+    <!--<result column="dec_method" jdbcType="VARCHAR" property="decMethod" />-->
+    <!--<result column="house_area" jdbcType="VARCHAR" property="houseArea" />-->
+    <!--<result column="quote_price" jdbcType="VARCHAR" property="quotePrice" />-->
+  <!--</resultMap>-->
+  <!--<sql id="Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Update_By_Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="example.oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Base_Column_List">-->
+    <!--custom_id, user_name, area, dec_method, house_area, quote_price-->
+  <!--</sql>-->
+  <!--<select id="selectByExample" parameterType="com.develop.entity.OrderInfoExample" resultMap="BaseResultMap">-->
+    <!--select-->
+    <!--<if test="distinct">-->
+      <!--distinct-->
+    <!--</if>-->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+    <!--<if test="orderByClause != null">-->
+      <!--order by ${orderByClause}-->
+    <!--</if>-->
+  <!--</select>-->
+  <!--<select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+    <!--delete from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</delete>-->
+  <!--<delete id="deleteByExample" parameterType="com.develop.entity.OrderInfoExample">-->
+    <!--delete from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info (custom_id, user_name, area, -->
+      <!--dec_method, house_area, quote_price-->
+      <!--)-->
+    <!--values (#{customId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, -->
+      <!--#{decMethod,jdbcType=VARCHAR}, #{houseArea,jdbcType=VARCHAR}, #{quotePrice,jdbcType=VARCHAR}-->
+      <!--)-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--custom_id,-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--user_name,-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area,-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method,-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area,-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--#{customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--#{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--#{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--#{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--#{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--#{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByExampleSelective" parameterType="map">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="record.customId != null">-->
+        <!--custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="record.userName != null">-->
+        <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.area != null">-->
+        <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.decMethod != null">-->
+        <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.houseArea != null">-->
+        <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.quotePrice != null">-->
+        <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByExample" parameterType="map">-->
+    <!--update order_info-->
+    <!--set custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR}-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="userName != null">-->
+        <!--user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price = #{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--set user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{quotePrice,jdbcType=VARCHAR}-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<resultMap id="BaseResultMap" type="com.develop.entity.OrderInfo">-->
+    <!--<id column="custom_id" jdbcType="INTEGER" property="customId" />-->
+    <!--<result column="user_name" jdbcType="VARCHAR" property="userName" />-->
+    <!--<result column="area" jdbcType="VARCHAR" property="area" />-->
+    <!--<result column="dec_method" jdbcType="VARCHAR" property="decMethod" />-->
+    <!--<result column="house_area" jdbcType="VARCHAR" property="houseArea" />-->
+    <!--<result column="quote_price" jdbcType="VARCHAR" property="quotePrice" />-->
+  <!--</resultMap>-->
+  <!--<sql id="Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Update_By_Example_Where_Clause">-->
+    <!--<where>-->
+      <!--<foreach collection="example.oredCriteria" item="criteria" separator="or">-->
+        <!--<if test="criteria.valid">-->
+          <!--<trim prefix="(" prefixOverrides="and" suffix=")">-->
+            <!--<foreach collection="criteria.criteria" item="criterion">-->
+              <!--<choose>-->
+                <!--<when test="criterion.noValue">-->
+                  <!--and ${criterion.condition}-->
+                <!--</when>-->
+                <!--<when test="criterion.singleValue">-->
+                  <!--and ${criterion.condition} #{criterion.value}-->
+                <!--</when>-->
+                <!--<when test="criterion.betweenValue">-->
+                  <!--and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}-->
+                <!--</when>-->
+                <!--<when test="criterion.listValue">-->
+                  <!--and ${criterion.condition}-->
+                  <!--<foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">-->
+                    <!--#{listItem}-->
+                  <!--</foreach>-->
+                <!--</when>-->
+              <!--</choose>-->
+            <!--</foreach>-->
+          <!--</trim>-->
+        <!--</if>-->
+      <!--</foreach>-->
+    <!--</where>-->
+  <!--</sql>-->
+  <!--<sql id="Base_Column_List">-->
+    <!--custom_id, user_name, area, dec_method, house_area, quote_price-->
+  <!--</sql>-->
+  <!--<select id="selectByExample" parameterType="com.develop.entity.OrderInfoExample" resultMap="BaseResultMap">-->
+    <!--select-->
+    <!--<if test="distinct">-->
+      <!--distinct-->
+    <!--</if>-->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+    <!--<if test="orderByClause != null">-->
+      <!--order by ${orderByClause}-->
+    <!--</if>-->
+  <!--</select>-->
+  <!--<select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+    <!--delete from order_info-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</delete>-->
+  <!--<delete id="deleteByExample" parameterType="com.develop.entity.OrderInfoExample">-->
+    <!--delete from order_info-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info (custom_id, user_name, area, -->
+      <!--dec_method, house_area, quote_price-->
+      <!--)-->
+    <!--values (#{customId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, -->
+      <!--#{decMethod,jdbcType=VARCHAR}, #{houseArea,jdbcType=VARCHAR}, #{quotePrice,jdbcType=VARCHAR}-->
+      <!--)-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--insert into order_info-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--custom_id,-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--user_name,-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area,-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method,-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area,-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="customId != null">-->
+        <!--#{customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="userName != null">-->
+        <!--#{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--#{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--#{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--#{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--#{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByExampleSelective" parameterType="map">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="record.customId != null">-->
+        <!--custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="record.userName != null">-->
+        <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.area != null">-->
+        <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.decMethod != null">-->
+        <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.houseArea != null">-->
+        <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="record.quotePrice != null">-->
+        <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByExample" parameterType="map">-->
+    <!--update order_info-->
+    <!--set custom_id = #{record.customId,jdbcType=INTEGER},-->
+      <!--user_name = #{record.userName,jdbcType=VARCHAR},-->
+      <!--area = #{record.area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{record.decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{record.houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{record.quotePrice,jdbcType=VARCHAR}-->
+    <!--<if test="_parameter != null">-->
+      <!--<include refid="Update_By_Example_Where_Clause" />-->
+    <!--</if>-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--<set>-->
+      <!--<if test="userName != null">-->
+        <!--user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="area != null">-->
+        <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="decMethod != null">-->
+        <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="houseArea != null">-->
+        <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="quotePrice != null">-->
+        <!--quote_price = #{quotePrice,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.develop.entity.OrderInfo">-->
+    <!--update order_info-->
+    <!--set user_name = #{userName,jdbcType=VARCHAR},-->
+      <!--area = #{area,jdbcType=VARCHAR},-->
+      <!--dec_method = #{decMethod,jdbcType=VARCHAR},-->
+      <!--house_area = #{houseArea,jdbcType=VARCHAR},-->
+      <!--quote_price = #{quotePrice,jdbcType=VARCHAR}-->
+    <!--where custom_id = #{customId,jdbcType=INTEGER}-->
+  <!--</update>-->
+</mapper>
