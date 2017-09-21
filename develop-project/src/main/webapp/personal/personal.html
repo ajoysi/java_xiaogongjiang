@@ -1,0 +1,413 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>个人中心</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="recruit.css">
+    <script type="text/javascript">
+        /*默认字号调整*/
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if(clientWidth > 1080)
+                    {
+                        clientWidth=1080;
+                        docEl.style.fontSize = 67.5 + 'px';
+                    }
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+    <!-- 头部公用JS -->
+    <script src="jquery-1.11.1.js"></script>
+	<script src='hxqcad/js/layer/laydate/laydate.js' /></script>
+	<script src="common.js"></script>
+	<script src='hxqcad/js/city.js' /></script>
+	<script src='hxqcad/js/citylist.js' /></script>
+	<!-- 引用控制层插件样式 -->
+		<link rel="stylesheet" href="control/css/zyUpload.css" type="text/css">
+		
+		<!-- <script type="text/javascript" src="jquery-1.7.2.js"></script> -->
+		<!-- 引用核心层插件 -->
+		<script type="text/javascript" src="core/zyFile.js"></script>
+		<!-- 引用控制层插件 -->
+		<script type="text/javascript" src="control/js/zyUpload.js"></script>
+		<!-- 引用初始化JS -->
+		<script type="text/javascript" src="demo.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="common.js"></script>
+		<script type="text/javascript" src="uploadify/jquery.uploadify.min.js"></script>
+    <!-- 本页JS -->
+	<style type="text/css">
+	.showAlertBody p{
+		line-height: 30px;
+	}
+    .uploadify-button {
+		background-color: transparent;
+        background-image: url(img/upload_btn.png) !important;
+        border: none;
+		position:absolute;
+		left:0px;
+        /* margin-left: 85px; */
+    }
+    .uploadify:hover .uploadify-button {
+		background-color: transparent;
+        background-image: url(img/upload_btn.png) !important;
+    }
+</style>
+</head>
+<body>
+<div class="social-recruit-box1">
+    <!--头部导航-->
+    <div class="social-recruit-navbox1">
+        <div class="social-recruit-nav1" >
+            <div class="recruit-logo">
+                <img src="logo.png" width="150px" height="60px"   alt="">
+            </div>
+            <ul class="recruit-ul">
+                <li><a href="../index.htm" tppabs="http://xiaogongjiang.com/" id="nav-1"title="首页">首页</a></li>
+                <li><a href="../index.htm" tppabs="http://xiaogongjiang.com/gongzhang/" id="nav-2"title="找大工匠">找大工匠</a></li>
+                <li><a href="../shuidiangong/index.htm" tppabs="http://xiaogongjiang.com/shuidiangong/" id="nav-3" title="找水电工">找水电工</a></li>
+                <li><a href="../mugong/index.htm" tppabs="http://xiaogongjiang.com/mugong/"id="nav-4"  title="找木工">找木工</a></li>
+                <li><a href="../shejishi/index.htm" tppabs="http://xiaogongjiang.com/gongdi/" id="nav-5"title="找设计师">找设计师</a></li>
+                <li><a title="找施工包" href="../shigongbao/index.html" tppabs="http://xiaogongjiang.com/zb/about.html" id="nav-7">找施工包</a></li>
+ 			    <li><a title="找主材包" href="../zhuchaibao/index.html" tppabs="http://xiaogongjiang.com/zb/about.html" id="nav-7">找主材包</a></li>
+			</ul>
+            <div class="recruit-button">
+                <div style="float: left">
+                    <a href="" id="btn-login">登录</a></span>
+                    <a href="" id="btn-register">注册</a></span>
+                </div>
+                <div style="float: right" class="user">
+                    <select>
+                        <option selected="selected">丁同学</option>
+                        <option value="1">退出登录</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--社会招聘图片-->
+    <div class="social-recruit-img">
+        <div class="social-img">
+      <!-- <img src="img/title02.png" width="246px" height="67px"> -->
+	个人中心
+	  </div>
+	</div>
+    <!--申请列表-->
+    <div class="personal-apply">
+        <div class="personal-apply-box">
+            <div class="personal-apply-list">
+                <p>我的资料</p>
+            </div>
+            <!-- <div class="personal-apply-My"> -->
+                <!-- <p>修改资料</p> -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <!--我得简历-->
+    <div class="personal-" style="width: 100%;">
+        <div id="lib_Tab1_sx" class="lib_tabborder_sx">
+            <div class="lib_Menubox_sx ">
+                <ul id="tab_t">
+                    <li>
+                        <div class="gr"></div>
+                        <span>个人信息</span>                    
+                    </li>                  
+                    <li>
+                        <div class="qt"></div>
+                        <span>其他信息</span>                       
+                    </li>
+                    <li>
+                        <div class="sc"></div>
+                        <span>上传图片</span>						
+                    </li>
+                </ul>
+            </div>
+            <div class="lib_Contentbox_sx " id="tab_c">
+                <!--个人信息-->
+                <div class="personage-box ">
+                    <!--上面头部-->
+                    <div class="personage-top">
+                        <div>个人信息</div>
+                        <div>与您获取联系得第一把钥匙，务必确保信息准确无误哦！</div>
+                    </div>
+                    <!--表单部分-->
+                    <div class="personage-form-box">
+                        <form action="" class="personage-form-left">
+                            <!--左-->
+                            <div class="personage-form-left-box">
+                                <div>
+                                    <span>*</span>姓名
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <span>*</span>性别
+                                    <span class="personage-form-radio">
+                                        <label><input type="radio" name="sex" >&nbsp;男</label>&nbsp;&nbsp;&nbsp;
+                                        <label><input type="radio" name="sex" >&nbsp;女</label>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>*</span>出生日期
+                                    <input name="birthday" onclick="laydate()" value=""  class="laydate-icon form-control layer-date inputDate">
+                                </div>
+                                <div style="margin-right:299px;">
+                                    <p style=""><span>*</span>籍贯</p>
+                                   <div class="select_input select_input1 select_input_width" style=" top:220px;left:170px;">
+						              <select class="select" name="province" id="province"><option value="">省</option></select>
+						           </div>
+						           <div class="select_input select_input2 select_input_width" style=" top:220px;left:313px;">
+						              <select name="city" class="select" id="city"><option value="">市</option></select>
+                                   </div>
+                                </div>
+                                <div>
+                                    <span>*</span>电话号码
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <span>*</span>身份证号码
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <span>*</span>现在住址
+                                    <input type="text">
+                                </div>
+                                <div class="personage-form-left-btn" style="margin-top:50px;">
+                                    <input type="button" value="保存并下一步">
+                                </div>
+                            </div>
+                            <!--右边上传-->
+                            <div class="personage-form-right-box" >
+                  	<div class="personage-form-right-box-img" style="position:relative;">
+                            <img src="" class="" id="img" height="250" width="230">
+							<div style="position:absolute;right:10px;top:5px;" class="close <?php if(!$info['img']) echo 'hide';?>"  id="delFile" type="button"></div>
+					</div>
+		            <div id='upfile' /> 
+                </div>
+                        </form>
+                    </div>
+                </div>
+                <!--教育背景-->              
+                <!--实践经验-->                      
+                <!--其他信息-->
+                <div class="else selected1" >
+                    <!--上面头部-->
+                    <div class="personage-top">
+                        <div>其他信息</div>
+                        <div>（必填项）</div>
+                    </div>
+                    <!--表单部分-->
+                    <div class="personage-form-box">
+                        <form action="" class="personage-form-left">
+                            <!--左-->
+                            <div class="personage-form-left-box">
+                                <div style="margin-right:298px;">
+                                    <span>*</span>接单区域
+                                    <div class="outside_select">
+						 <select id="workplace"  class="select" name="english_level"  value="" style="width: 140px; position: absolute;top:4px;left:0px;">
+						<option value="">请选择</option>
+                        <option value="汉阳" >汉阳</option>
+						<option value="武昌" >武昌</option>
+						<option value="汉口" >汉口</option>
+						<option value="江夏" >江夏</option>
+						<option value="武汉不限" >武汉不限</option>
+						</select>
+						</div>
+                                </div>
+								<div style="margin-right:298px;">
+                                    <span>*</span>岗位类型
+                                    <div class="outside_select outside_select2">
+						<select id="typejob"  class="select" name="english_level"  value="" style="width: 140px;position: absolute;top:4px;left:0px;">
+						<option value="">请选择</option>
+                        <option value="设计师" >设计师</option>
+						<option value="油漆工" >油漆工</option>
+						<option value="泥瓦工" >泥瓦工</option>
+						<option value="水电工" >水电工</option>
+						<option value="木工" >木工</option>
+						<option value="其它" >其它</option>
+						</select>
+						</div>
+                                </div>
+                                <div>
+                                    <span>*</span>期望工价
+                                    <input type="text" placeholder="200-300/天">
+                                </div>
+                                <div style="margin-right:190px;">
+                                    <span>*</span>是否愿意接受工地地点调动
+                                    <span class="personage-form-radio workplace">
+                                        <label><input type="radio" name="sex" >&nbsp;是</label>&nbsp;&nbsp;&nbsp;
+                                        <label><input type="radio" name="sex" >&nbsp;否</label>
+                                    </span>
+                                </div>
+                                <div style="margin-right:190px;">
+                                    <span>*</span>是否服从岗位调整
+                                    <span class="personage-form-radio changejob">
+                                       <label> <input type="radio" name="sex" >&nbsp;是</label>&nbsp;&nbsp;&nbsp;
+                                       <label> <input type="radio" name="sex" >&nbsp;否</label>
+                                    </span>
+                                </div>
+                                <div class="personage-form-left-btn" style="margin-top:150px;">
+                                    <input type="button" value="保存并下一步">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--上传附件-->
+                <div class="else selected1" >
+                    <!--上面头部-->
+                    <div class="personage-top">
+                        <div>上传工地照片</div>
+                    </div>
+                    <!--表单部分-->
+                    <div class="personage-form-box" style="border:1px red solid; height:516px;">
+                        <div class="personage-form-left">
+                          <div id="demo" class="demo"></div>   
+						   
+						   
+						   
+						   
+						   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部部分-->
+    <div class="social-recruit-footer">
+        <div class="social-recruit-footerList">
+            <div>Copyright&nbsp;2015&nbsp;恒信汽车集团&nbsp;版权所有&nbsp;鄂ICP备06018393号</div>
+            <ul>
+                <li><a href="">经销网络</a></li>
+                <li><a href="">新闻中心</a></li>
+                <li><a href="">人力资源</a></li>
+                <li><a href="">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+<!-- 左边点击切换 类似tab -->
+    $(document).ready(function(){  
+        var tab_t_li = $("#tab_t li")
+        var tab_c_li = $("#tab_c").children();
+        for(var i = 0;i<tab_t_li.length;i++){//循环每个按钮
+            tab_t_li[i].index = i;
+            tab_t_li[i].onclick = function(){
+                for(var i = 0;i<tab_t_li.length;i++){
+                    tab_t_li[i].className="";
+                    tab_c_li[i].style.display='none';
+                    tab_c_li[this.index].style.display='block';
+                }
+            }
+        }
+    });
+<!-- 城市选择 使用插件 citylist  city.js -->
+$("#personage-form").cityList({ city: {provinces:citylist}, curr:"{$info['province']},{$info['city']}"});
+//==========================上传图片===============================
+window.onload=function(){
+	var swf;
+	if(navigator.userAgent.indexOf("Firefox")>0 || navigator.userAgent.indexOf("Chrome")>0||navigator.userAgent.indexOf("Safari")>0) {
+		swf=navigator.plugins["Shockwave Flash"]; if(!swf){showAlert("未安装flash插件,上传功能不能使用！<br/>安装完毕后请重新启动浏览器！<br/>下载地址：<a href='https://get2.adobe.com/cn/flashplayer/' target='_blank'>https://get2.adobe.com/cn/flashplayer/</a>",0);}
+	}
+};
+$(function() {  
+		$("#upfile").uploadify({
+			'formData' : {
+				  'token' : '{$tokey}',
+		   },
+		   'auto' : true,
+		   'method' : "post",   
+		   'swf' : 'uploadify/images/uploadify.swf',   
+		   'uploader' : 'upload/index',//服务器端脚本文件路径，必写项
+		   'uploadLimit': '999',//上传文件的数量。达到或超出这数量会触发onUploadError方法。默认999
+		   'buttonClass':'close', //设置上传按钮的class
+		   'buttonImage' : 'img/upload_btn.png',
+		   'fileTypeDesc' : '支持的格式:*.jpg;*.png;*.jpeg',			//描述  
+		   'fileTypeExts': '*.jpg;*.png;*.jpeg',         //文件类型  
+		   'fileSizeLimit' : '20000KB',          //文件大小  
+		   'buttonText' : '',				//按钮名称
+		   'multi' : false, //设置是否允许一次选择多个文件，true为允许，false不允许
+		   'fileObjName'    :'upfile',//设置在后台脚本使用的文件名。举个例子，在php中，如果这个选项设置为'the_files',你可以使用$_FILES['the_files']存取这个已经上传的文件
+		   'checkExisting' : false,//接受一个文件路径。此文件检查正要上传的文件名是否已经存在目标目录中。存在时返回1，不存在时返回0(应该主要是作为后台的判断吧)，默认为false
+		   'successTimeout' : '3',//设置文件上传后等待服务器响应的秒数，超出这个时间，将会被认为上传成功，默认为30秒
+		   'requeueErrors' : false,
+		   'debug':false,
+		   'removeTimeout' : '1',
+		   'removeCompleted' : true,
+		   'height' : '38',
+		   'width' : '205',
+		   'overrideEvents': ['onSelectError', 'onDialogClose', 'onUploadSuccess', 'onFallback'],//重写事件，接受事件名称的数组作为参数。所设置的事件将可以被用户重写覆盖
+		   'onUploadStart': function(file){
+		   },
+		   'onUploadSuccess': function(file, data, response){
+			   var d= new Date();
+				if(response==true){
+					var dataObj=eval("("+data+")");//转换为json对象
+					if(dataObj.status==1){
+						$("#img").attr('src',dataObj.data.fileUrl);
+						$("#resumeImg").val(dataObj.data.filePath);
+						$("#img").removeClass("hide");
+						$('#delFile').removeClass("hide");
+					}else{
+						showAlert(dataObj.info);
+					}
+				}else{
+					showAlert('服务器无法连接',0);
+				}
+			},
+		   'onSelect' : function(file){
+			},
+		   onFallback: function () {
+				
+			   // parent.showalert('<a href="https://get2.adobe.com/cn/flashplayer/" target="_blank" style="color:#4B4B4E;text-decoration: underline; font-size:14px; line-height:40px">您未安装FLASH控件，无法上传资料！点击下载安装FLASH控件。>></a>');
+			},
+					onSelectError: function (file, errorCode, errorMsg) {
+					switch (errorCode) {
+						default:
+							showAlert('该图片不能上传，请选择合适图片!');
+							break;
+					}
+				}
+		});
+		$('#upfile').css({'margin-left':'100px','top':'10px','position':'relative'});
+		$('#SWFUpload_0').css({'left':0});
+});
+
+$('#delFile').click(function(){
+	if(!confirm('你确定要删除照片吗？')){
+		return false;
+	}
+	$.ajax({
+			cache: true,
+			type: "POST",
+			url: "{:U('User/deleteFile')}",
+			data: {type:20},
+			dataType: "json",
+			error: function (request){showAlert('服务器无法连接!',0);},
+			success: function (data) {
+				if (data.status == 1) {
+					//删除成功
+					$("#img").addClass("hide").attr('src','');
+					$('#delFile').addClass("hide");
+				}else{
+					showAlert(data.info,0);
+				}
+			}
+	});
+});	
+</script>
